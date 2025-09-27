@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;1,200;1,300;1,600&family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15vh;
+    background-color: #24323d;
+    
+}
+#container
+{
+    position: relative;
+    width: 52vh;
+    height: 51.5vh;
+    background-color: #1c2e4a;
+    border-radius: 8px;
+    border: 1px solid white; 
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1); 
+}
+#box1
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 33.4%;
+    height: 33.4%;
+    background-color: #4682b4;
+    color: black;
+    font-size: 10vh;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid white;
+    padding-top: 3%;
+    cursor: pointer;
+    border-radius: 8px;
+    user-select: none;
+    transition:left 0.3s,top 0.3s;
+}
+#box2
+{
+    position: absolute;
+    left: 135px;
+    top: 0px;
+    width: 33.4%;
+    height: 33.4%;
+    background-color: #4682b4;
+    border-radius: 8px;
+    color: black;
+    font-size: 10vh;
+    border: 1px solid white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+    cursor: pointer;
+    user-select: none;
+    transition:left 0.3s,top 0.3s;
+}
+#box3
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 33.4%;
+    height: 33.4%;
+    border-radius: 8px;
+    background-color: #4682b4;
+    color: black;
+    font-size: 10vh;
+    border: 1px solid white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+    cursor: pointer;
+    user-select: none;
+    transition:left 0.3s,top 0.3s;
+}
+#box4
+{
+    position: absolute;
+    left: 0px;
+    top: 135px;
+    width: 33.4%;
+    height: 33.4%;
+    border-radius: 8px;
+    background-color: #4682b4;
+    color: black;
+    font-size: 10vh;
+    border: 1px solid white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+    cursor: pointer;
+    user-select: none;
+    transition:left 0.3s,top 0.3s;
+}
+#box5
+{
+    position: absolute;
+    right: 135px;
+    top: 135px;
+    width: 33.4%;
+    height: 33.4%;
+    border-radius: 8px;
+    background-color: #4682b4;
+    color: black;
+    font-size: 10vh;
+    border: 1px solid white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+    cursor: pointer;
+    user-select: none;
+    transition:left 0.3s,top 0.3s;
+}
+#box6
+{
+    position: absolute;
+    right: 0px;
+    top: 135px;
+    width: 33.4%;
+    height: 33.4%;
+    border-radius: 8px;
+    background-color: #4682b4;
+    color: black;
+    font-size: 10vh;
+    border: 1px solid white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+    cursor: pointer;
+    user-select: none;
+    transition:left 0.3s,top 0.3s;
+}
+#box7
+{
+    position: absolute;
+    left: 0px;
+    top: 269px;
+    width: 33.4%;
+    height: 33.4%;
+    border-radius: 8px;
+    background-color: #4682b4;
+    color: black;
+    font-size: 10vh;
+    border: 1px solid white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+    cursor: pointer;
+    user-select: none;
+    transition:left 0.3s,top 0.3s;
+}
+#box8
+{
+    position: absolute;
+    left: 135px;
+    top: 269px;
+    width: 33.4%;
+    height: 33.4%;
+    border-radius: 8px;
+    background-color: #4682b4;
+    color: black;
+    font-size: 10vh;
+    border: 1px solid white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+    cursor: pointer;
+    user-select: none;
+    transition:left 0.3s,top 0.3s;
+}
+#box9
+{
+    position: absolute;
+    left: 269px;
+    top: 269px;
+    width: 33.9%;
+    height: 33.4%;
+    border-radius: 8px;
+    background-color: #4682b4;
+    color: black;
+    font-size: 10vh;
+    border: 1px solid white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+    cursor: pointer;
+    user-select: none;
+    transition:left 0.3s,top 0.3s;
+}
+#game
+{
+    width: 300px;
+    height: 100px;
+    background-color: #4682b4;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    padding-top: 20px;
+}
+    </style>
+</head>
+<body>
+    <div id="game">Tic-Tac Game</div>
+    <div id="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+        <div id="box6"></div>
+        <div id="box7"></div>
+        <div id="box8"></div>
+        <div id="box9"></div>
+
+    </div>
+    <!-- <div id="bot">
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+    </div> -->
+    <script>
+        let one=document.getElementById("box1");
+        let two=document.getElementById("box2");
+        let three=document.getElementById("box3");
+        let four=document.getElementById("box4");
+        let five=document.getElementById("box5");
+        let six=document.getElementById("box6");
+        let seven=document.getElementById("box7");
+        let eight=document.getElementById("box8");
+        let nine=document.getElementById("box9");
+        let x=1;
+        function check( t)
+        {
+                 if(x==1 && t==1)
+                 {
+                       one.innerHTML="0";
+                       x=2;
+                 }
+                 else if(x==2 && t==1)
+                 {
+                         one.innerHTML="X";
+                         x=1;
+                 }
+                 if(x==1 && t==2)
+                 {
+                       two.innerHTML="0";
+                       x=2;
+                 }
+                 else if(x==2 && t==2)
+                 {
+                         two.innerHTML="X";
+                         x=1;
+                 }
+                 if(x==1 && t==3)
+                 {
+                       three.innerHTML="0";
+                       x=2;
+                 }
+                 else if(x==2 && t==3)
+                 {
+                         three.innerHTML="X";
+                         x=1;
+                 }
+                 if(x==1 && t==4)
+                 {
+                       four.innerHTML="0";
+                       x=2;
+                 }
+                 else if(x==2 && t==4)
+                 {
+                         four.innerHTML="X";
+                         x=1;
+                 }
+                 if(x==1 && t==5)
+                 {
+                       five.innerHTML="0";
+                       x=2;
+                 }
+                 else if(x==2 && t==5)
+                 {
+                         five.innerHTML="X";
+                         x=1;
+                 }
+                 if(x==1 && t==6)
+                 {
+                       six.innerHTML="0";
+                       x=2;
+                 }
+                 else if(x==2 && t==6)
+                 {
+                         six.innerHTML="X";
+                         x=1;
+                 }
+                 if(x==1 && t==7)
+                 {
+                       seven.innerHTML="0";
+                       x=2;
+                 }
+                 else if(x==2 && t==7)
+                 {
+                         seven.innerHTML="X";
+                         x=1;
+                 }
+                 if(x==1 && t==8)
+                 {
+                       eight.innerHTML="0";
+                       x=2;
+                 }
+                 else if(x==2 && t==8)
+                 {
+                         eight.innerHTML="X";
+                         x=1;
+                 }
+                 if(x==1 && t==9)
+                 {
+                       nine.innerHTML="0";
+                       x=2;
+                 }
+                 else if(x==2 && t==9)
+                 {
+                         nine.innerHTML="X";
+                         x=1;
+                 }
+                 
+        }
+        one.addEventListener('click',function(){
+            
+            check(1);
+
+        });
+
+      
+
+        two.addEventListener('click',function(){
+             
+            check(2);
+           
+           
+
+        });
+
+        three.addEventListener('click',function(){
+
+            check(3);
+           
+
+        });
+        four.addEventListener('click',function(){
+            check(4);
+           
+
+        });
+
+        five.addEventListener('click',function(){
+            check(5);
+           
+
+        });
+
+        six.addEventListener('click',function(){
+            check(6); 
+
+        });
+
+        seven.addEventListener('click',function(){
+            check(7);
+           
+
+        });
+
+        eight.addEventListener('click',function(){
+            check(8);
+
+        });
+
+        nine.addEventListener('click',function(){
+            check(9);
+
+        });
+        
+        
+    </script>
+    
+</body>
+</html>
